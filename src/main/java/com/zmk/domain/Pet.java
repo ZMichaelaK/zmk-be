@@ -13,48 +13,43 @@ public class Pet {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer petId;
-	private String petName;
-	private Integer petAge;
-	private String petColour;
-	private String petURL;
+	
+	private String name;
+	
+	private Integer age;
+	
+	private String colour;
+	
+	private String image;
 	
 	public Integer getPetId() {
 		return petId;
 	}
-
 	public void setPetId(Integer petId) {
 		this.petId = petId;
 	}
-
-	public String getPetName() {
-		return petName;
+	public String getName() {
+		return name;
 	}
-
-	public void setPetName(String petName) {
-		this.petName = petName;
+	public void setName(String name) {
+		this.name = name;
 	}
-
-	public Integer getPetAge() {
-		return petAge;
+	public Integer getAge() {
+		return age;
 	}
-
-	public void setPetAge(Integer petAge) {
-		this.petAge = petAge;
+	public void setAge(Integer age) {
+		this.age = age;
 	}
-
-	public String getPetColour() {
-		return petColour;
+	public String getColour() {
+		return colour;
 	}
-
-	public void setPetColour(String petColour) {
-		this.petColour = petColour;
+	public void setColour(String colour) {
+		this.colour = colour;
 	}
-
-	public String getPetURL() {
-		return petURL;
+	public String getImage() {
+		return image;
 	}
-
-	public void setPetURL(String petURL) {
-		this.petURL = petURL;
-	}
-	}
+	public void setImage(String image) {
+		this.image = image;
+	}	
+}
