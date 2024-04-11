@@ -50,17 +50,17 @@ public class PetService {
 
         Pet existing = found.get();
 
-        if (petDetails.getName() != null) {
-            existing.setName(petDetails.getName());
+        if (petDetails.getPetName() != null) {
+            existing.setPetName(petDetails.getPetName());
         }
-        if (petDetails.getAge() != null) {
-            existing.setAge(petDetails.getAge());
+        if (petDetails.getPetAge() != null) {
+            existing.setPetAge(petDetails.getPetAge());
         }
-        if (petDetails.getColour() != null) {
-            existing.setColour(petDetails.getColour());
+        if (petDetails.getPetColour() != null) {
+            existing.setPetColour(petDetails.getPetColour());
         }
-        if (petDetails.getImage() != null) {
-            existing.setImage(petDetails.getImage());
+        if (petDetails.getPetURL() != null) {
+            existing.setPetURL(petDetails.getPetURL());
         }
 
         Pet updated = this.repo.save(existing);
