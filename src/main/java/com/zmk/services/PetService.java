@@ -56,11 +56,14 @@ public class PetService {
         if (petDetails.getPetAge() != null) {
             existing.setPetAge(petDetails.getPetAge());
         }
+        if (petDetails.getPetType() != null) {
+            existing.setPetType(petDetails.getPetType());
+        }
         if (petDetails.getPetColour() != null) {
             existing.setPetColour(petDetails.getPetColour());
         }
-        if (petDetails.getPetURL() != null) {
-            existing.setPetURL(petDetails.getPetURL());
+        if (petDetails.getImage() != null) {
+            existing.setImage(petDetails.getImage());
         }
 
         Pet updated = this.repo.save(existing);
